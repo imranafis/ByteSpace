@@ -1,6 +1,6 @@
-# ByteSpace – React
+# ByteSpace
 
-React + Vite rebuild of the "ByteSpace New Check website" Figma file.
+Vercel Link: https://bytespace-phi-ruddy.vercel.app/
 
 ## Run
 ```bash
