@@ -1,0 +1,31 @@
+/* Design tokens extracted from the Figma file */
+:root {
+  /* Persian Blue */
+  --blue-50: #e7f6ff; --blue-100: #d3eeff; --blue-200: #b0ddff; --blue-300: #81c5ff;
+  --blue-400: #4f9dff; --blue-500: #2872ff; --blue-600: #0445ff; --blue-700: #0043ff;
+  --blue-800: #003be2; --blue-900: #0b36a4; --blue-950: #071e5f;
+  /* Electric Violet */
+  --violet-50: #f5f2ff; --violet-600: #7f30f7; --violet-950: #300b6a;
+  /* Electric Lime / Mindaro */
+  --lime-300: #e4ff54; --lime-400: #d4fb20; --lime-500: #cbfc01; --lime-600: #8cb400;
+  --mindaro-400: #c1e338; --mindaro-200: #e4f68a;
+  /* Shuttle Gray */
+  --gray-50: #f5f5f6; --gray-100: #e5e6e8; --gray-200: #ced0d3; --gray-300: #abaeb5;
+  --gray-400: #82868e; --gray-500: #666973; --gray-700: #4b4c53; --gray-900: #3a3b3f; --gray-950: #242528;
+  /* Vulcan */
+  --vulcan-950: #040819;
+  /* Neutrals */
+  --black: #000000; --black-700: #4f4f4f; --black-400: #888888; --black-200: #d1d1d1; --white: #ffffff;
+  --surface: #fafafa;
+
+  --brand: var(--blue-700);
+  --accent: var(--lime-500);
+
+  --font-display: 'Poppins', 'Inter', system-ui, sans-serif;
+  --font-body: 'Satoshi', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-pill: 24px;
+  --radius-card: 24px;
+  --radius-sm: 12px;
+  --container: 1200px;
+}

@@ -1,0 +1,48 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; padding: 0; }
+h1, h2, h3, h4, p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+:focus-visible { outline: 3px solid var(--violet-600); outline-offset: 3px; border-radius: 6px; }
+
+.container { width: min(var(--container), 100% - 48px); margin-inline: auto; }
+
+/* Type scale (from Figma text styles) */
+.display-l { font: 600 72px/1.1 var(--font-display); letter-spacing: -1px; }
+.display-s { font: 500 44px/1.2 var(--font-display); letter-spacing: -1px; }
+.display-xs { font: 500 36px/1.2 var(--font-display); letter-spacing: -1px; }
+.heading-s { font: 600 24px/1.33 var(--font-display); letter-spacing: -1px; }
+.heading-xs { font: 600 20px/1.4 var(--font-display); letter-spacing: -.5px; }
+.body-l { font-size: 18px; line-height: 1.6; }
+.body-m { font-size: 16px; line-height: 1.6; }
+.body-xs { font-size: 12px; line-height: 1.6; }
+.label-l { font-size: 18px; font-weight: 500; line-height: 1.2; }
+.label-m { font-size: 16px; font-weight: 500; line-height: 1.2; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+@media (max-width: 900px) {
+  .display-l { font-size: 44px; }
+  .display-s { font-size: 32px; }
+  .display-xs { font-size: 28px; }
+}
